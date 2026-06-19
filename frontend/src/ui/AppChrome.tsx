@@ -367,6 +367,28 @@ export default function AppChrome({ children }: PropsWithChildren) {
       >
         {children}
       </Box>
+
+      <Box
+        component="footer"
+        sx={{
+          textAlign: "center",
+          py: 1.5,
+          borderTop: "1px solid rgba(0,0,0,0.08)",
+          backgroundColor: "#F0F4F8",
+        }}
+      >
+        <Typography variant="caption" sx={{ color: "text.secondary" }}>
+          VIMS4ALL &copy; 2025-2026 Radoslav Chobanov &amp; Herbert Wenk &mdash; Licensed under the{" "}
+          <a
+            href="https://www.gnu.org/licenses/gpl-3.0.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "inherit" }}
+          >
+            GNU GPL v3
+          </a>
+        </Typography>
+      </Box>
     </ThemeProvider>
   );
 }

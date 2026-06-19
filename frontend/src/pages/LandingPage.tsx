@@ -207,14 +207,27 @@ export default function LandingPage() {
             </Typography>
           </Paper>
 
-          {/* Footer */}
-          <Typography
-            variant="caption"
-            align="center"
-            sx={{ mt: 2, color: "#64748B", display: "block" }}
-          >
-            © {new Date().getFullYear()} VIMS4ALL. All rights reserved.
-          </Typography>
+          {/* License Notice */}
+          <Box sx={{ mt: 3, textAlign: "center" }}>
+            <Typography variant="caption" sx={{ color: "#64748B", display: "block", lineHeight: 1.8 }}>
+              &copy; 2025&ndash;{new Date().getFullYear()} Radoslav Chobanov &amp; Herbert Wenk
+            </Typography>
+            <Typography variant="caption" sx={{ color: "#64748B", display: "block", lineHeight: 1.8 }}>
+              This software is free and open source, licensed under the{" "}
+              <a
+                href="https://www.gnu.org/licenses/gpl-3.0.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#1565C0", textDecoration: "none", fontWeight: 500 }}
+              >
+                GNU General Public License v3
+              </a>
+              .
+            </Typography>
+            <Typography variant="caption" sx={{ color: "#94A3B8", display: "block", lineHeight: 1.8 }}>
+              You are free to use, modify, and redistribute this software under the same terms.
+            </Typography>
+          </Box>
         </Container>
       </Box>
     </ThemeProvider>
