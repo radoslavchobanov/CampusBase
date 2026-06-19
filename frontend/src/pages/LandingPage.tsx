@@ -210,7 +210,10 @@ export default function LandingPage() {
           {/* License Notice */}
           <Box sx={{ mt: 3, textAlign: "center" }}>
             <Typography variant="caption" sx={{ color: "#64748B", display: "block", lineHeight: 1.8 }}>
-              &copy; 2025&ndash;{new Date().getFullYear()} Radoslav Chobanov &amp; Herbert Wenk
+              &copy; 2025&ndash;{new Date().getFullYear()}{" "}
+              <a href="mailto:rado.chobanov97@gmail.com" style={{ color: "#64748B" }}>Radoslav Chobanov</a>
+              {" "}&amp;{" "}
+              <a href="mailto:Herbert.Wenk@HGWconsult.de" style={{ color: "#64748B" }}>Herbert Wenk</a>
             </Typography>
             <Typography variant="caption" sx={{ color: "#64748B", display: "block", lineHeight: 1.8 }}>
               This software is free and open source, licensed under the{" "}
